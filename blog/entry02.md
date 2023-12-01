@@ -28,7 +28,7 @@ I am currently on the second step, which is **research the problem**. I am resea
 At first, I want to know what technologies are used in toys,so I searched up "toys with technologies." I saw the most websites that comes up has the term **Smart toys** so I then connected smart toys with toys that has technologies in them. Later on in the research, I searched up "what are smart toys" and drop down their features in my notes. 
 
 ### Problem Decomposition 
-Smart toy is a broad catergory and there are different type of smart toys. I first picked two types of smart toys that are the most popular which is AI smart toys and robotic smart toys. I then go to search examples of the smart toys for each type. 
+At first, I just search "technologies in toys" in Google, but I then make it more specific by adding what I want to find such as "toys gadgets" for hardware technologies and "apps that do with toys" for software technologies. When I learned that toys with technologies are called smart toys, I put my focus in smart toys. Smart toy is a broad catergory and there are different type of smart toys. I first picked two types of smart toys that are the most popular which is AI smart toys and robotic smart toys. I then go to search examples of the smart toys for each type. 
 
 
 
