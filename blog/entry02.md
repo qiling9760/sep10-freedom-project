@@ -19,7 +19,16 @@ Before there were games, people played physical puzzles that are made by wood, p
 ### Apps that connected to toys 
 The Lego AR Studio is an app that allows children to play with the digital version of the legos. Their [website](https://www.lego.com/en-us/aboutus/news/2019/october/lego-ar-studio) talks about how children can play with the digital LEGO models in real-world enviorment. Another app that has to do with Lego would be Brickit. It allows you to use your left over lego pieces to build new stuff. It works by the user use the app and scan their legos, the app will show up modles that can be build using those legos. There are also online Rubik's Cube Solver where it helps the user to solve Rubrik's Cube. The user will make the rubik's cube model to be the same as their scrambled rubik's cube, and the website will show the steps to solve the rubik's cube. 
 
+## Engineering Design Process 
+I am currently on the second step, which is **research the problem**. I am researching the hardware and software technologies that are used in or include toys and puzzles. The hardwares I found are 3D printers which is a new way to create toy, and smart toys are new forms of toys that include technologies. The softwares are mostly games and apps where the games are about puzzles and the apps can help the user to play with their toys. My next step is **brainstorm possible solutions** which means I need to use what I had found to conclude how has technologies change toys and puzzles. 
 
+## Skills 
+
+### Logical Reasoning 
+At first, I want to know what technologies are used in toys,so I searched up "toys with technologies." I saw the most websites that comes up has the term **Smart toys** so I then connected smart toys with toys that has technologies in them. Later on in the research, I searched up "what are smart toys" and drop down their features in my notes. 
+
+### Problem Decomposition 
+Smart toy is a broad catergory and there are different type of smart toys. I first picked two types of smart toys that are the most popular which is AI smart toys and robotic smart toys. I then go to search examples of the smart toys for each type. 
 
 
 
