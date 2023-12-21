@@ -12,10 +12,13 @@ Holography is the production of 3 dimensional image of an object. Holograms are 
 In my research, I know that we can use 3D printer to print toys. However, 3D printing needs the user to make a digital file of the toy before printing it. So, I have an idea that in the future, there will be a machine that can be conrtolled by the user's mind and do not need the user to waste time on creating a 3D model. When the user think of the toys they want to make in their head, the machine will automatically creat the toys the user wants. 
 
 ### AI that can act like fictional characters 
-Smart toys can talk, move, and interact with kids. However, the AIs in the toys are all the same and not smart enough to communicate with kids. So in the future, I hope that there will be toys with AIs that are smart enough to act like kids' favorite characters in a book/movie/game and talk to them. The AI will collect the character’s information such as their personalities and their voices, and kids will have fun spending time and communicating with people they liked. 
+Smart toys can talk, move, and interact with kids. However, the AI in the toys are all the same and not smart enough to communicate with kids. So in the future, I hope that there will be toys with AI that are smart enough to act like kids' favorite characters in a book/movie/game and talk to them. The AI will collect the character’s information such as their personalities and their voices, and kids will have fun spending time and communicating with people they liked. 
 
 ### A technology that can turn life into puzzle games 
-The new technology that I thought up was a smart glasses, just like VR glasses but much simpler. The smart glasses can turn ordinary events in to challenges. When the user use this smart glasses, it can will make every small things in life become a puzzle that is ready to solve. 
+The new technology that I thought up was a smart glasses, just like VR glasses but much simpler. The smart glasses can turn ordinary events into challenges. When the user use this smart glasses, it can will make every small things in life become a puzzle that is ready to solve. 
+
+### A toy that can create music based on the user's feelings.
+I have asked my sister what toys she would want in the future, and she told me she would like a toy that has something to do with music. Speaking of music, I thought of the background music in the movie shows. So, the idea that I came up was a toy that can create music based on feelings. There will be a bracelet that can detect the user’s feelings and transfer the data to a toy. The toy can make a song that matches the user’s feelings.
 
 
 
