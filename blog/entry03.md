@@ -15,7 +15,9 @@ In my research, I know that we can use 3D printer to print toys. However, 3D pri
 Smart toys can talk, move, and interact with kids. However, the AIs in the toys are all the same and not smart enough to communicate with kids. So in the future, I hope that there will be toys with AIs that are smart enough to act like kids' favorite characters in a book/movie/game and talk to them. The AI will collect the character’s information such as their personalities and their voices, and kids will have fun spending time and communicating with people they liked. 
 
 ### A technology that can turn life into puzzle games 
-Sometimes our lives might seem boring, but we can make it interesting if we can make our lives challenging. In the future, I hope there will be a smart glasses that 
+The new technology that I thought up was a smart glasses, just like VR glasses but much simpler. The smart glasses can turn ordinary events in to challenges. When the user use this smart glasses, it can will make every small things in life become a puzzle that is ready to solve. 
+
+
 
 
 
