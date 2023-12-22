@@ -22,8 +22,15 @@ I have asked my sister what toys she would want in the future, and she told me s
 ## Finalized content 
 I organized my notes by separating them into categories. I renamed my Part A into "**Software and Hardware that already exist**" and my Part B into "**Future Possible Technologies**". The three main categories I have in my Part A are Hardware, Software, and Both. I also have informations that do not fit into either categories which is Toy Careers. I decided to organize my notes this way because I looked at the [examples](https://docs.google.com/document/d/1w025TKLSU0PxNJAaa4OIykkkhQI8gbeYSwAY-GccYrM/preview) that Mr. Mueller gave us. I named by Part A like the first student did and have other imformations by themselves like the last student did. I make Part A into three categories because they are what Mr. Mueller told us to research for our Part A. 
 
+## Engineering Design Process 
+I am now in the **Brainstorm possible solutions** stage. I have brainstormed how technologies will impact toys and puzzles in the future. I have organized what I have researched and come up with possible future technologies that based on what I have found. My next step would be **Plan the most promising solution** which is to combine my notes and think of how will I put them into my website. 
 
+## Skills 
+### Communication 
+I asked help from my sister and my partner, Ellen. When I can't think up any more ideas for **Future Possible Technologies**, I asked my sister for her thoughts. She had give me great feedbacks, and it helped me to think up the idea of "A toy that can create music based on the user's feelings." When I came up with a new idea, I told Ellen about it, and she helped me add more details to that idea.
 
+### Organization 
+I organized my notes into categories. I figured out which are hardwares, softwares, or both. I also looked at others' contents and websites to give myself some ideas about organization. When I am writing my notes, I put bullet points and sub-bullet points to make it clear for which details go with which idea. 
 
 [Previous](entry02.md) | [Next](entry04.md)
 
