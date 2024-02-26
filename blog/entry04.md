@@ -16,10 +16,13 @@ border: {
 }
 ```
 I also nest them into a `p` selector so when it compiled into CSS, my paragraph would have all of the properties that I wrote. 
+<img width="1087" alt="Screenshot 2024-02-26 at 1 16 41 AM" src="https://github.com/qiling9760/sep10-freedom-project/assets/146866841/670049aa-c3a0-45d6-9454-0a7160553b8c">
 
 I learned that a `@mixin` directive allow you to create CSS code that can reuse through out the website and a `@include` directive allow you to use the mixin. I can use the mixin with nested properties. In this way, my paragraph and header both have the same border properties but I don't have to write the codes two times. 
+<img width="1043" alt="Screenshot 2024-02-26 at 1 26 31 AM" src="https://github.com/qiling9760/sep10-freedom-project/assets/146866841/57679943-62e4-46a4-9eb7-7f4406d445d8">
 
 I learned that the `@extend` directive allow you to share the CSS properties of one selector to other selectors. I combined `@extend` with `@mixin` and nested properties to give my paragraph and header similar properties but let my paragraph to have more properties than my header. 
+<img width="988" alt="Screenshot 2024-02-26 at 1 39 31 AM" src="https://github.com/qiling9760/sep10-freedom-project/assets/146866841/84b959c7-63d4-4cf6-9e81-cf60b7933200">
 
 
 
