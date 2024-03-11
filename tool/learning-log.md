@@ -18,8 +18,11 @@ p {
 ``` 
 - I learned that I can only put `variable: value` and cannot put `variable: property: value`. 
 
-X/X/X:
-* Text
+3/11/24:
+- My classmate Kyle told me a trick that could compile SCSS to CSS without writing a command 
+  - I will need to click on the function key and the f1 key to make the search bar to pop up. Then I find the "Live Sass: Watch Sass" and it will automatically compile SCSS code into CSS code without me writing the command in the terminal. To stop compiling, I will click on the "Live Sass: Stop Watching." 
+
+
 
 
 <!--
