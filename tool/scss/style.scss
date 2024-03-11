@@ -1,7 +1,22 @@
-$font-stack: Helvetica, sans-serif;
-$primary-color: #333;
+@use 'style2';
+@use 'style3';
 
-body {
+$font-stack: Helvetica, sans-serif;
+$primary-color: red;
+$border:2px;
+
+
+p {
   font: 100% $font-stack;
   color: $primary-color;
+  border-width: $border;
 }
+
+h1 {
+  font: 100% $font-stack;
+  color: $primary-color;
+  border-width: $border;
+}
+
+
+

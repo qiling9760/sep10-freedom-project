@@ -1,0 +1,23 @@
+li {
+  padding-bottom: 0;
+  padding-left: 0;
+}
+
+ul {
+  padding-bottom: 0;
+  padding-left: 0;
+}
+
+p {
+  font: 100% Helvetica, sans-serif;
+  color: red;
+  border-width: 2px;
+}
+
+h1 {
+  font: 100% Helvetica, sans-serif;
+  color: red;
+  border-width: 2px;
+}
+
+/*# sourceMappingURL=style.css.map */
