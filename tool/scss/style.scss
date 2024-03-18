@@ -3,20 +3,37 @@
 
 $font-stack: Helvetica, sans-serif;
 $primary-color: red;
-$border:2px;
+$value:2px;
+
 
 
 p {
   font: 100% $font-stack;
   color: $primary-color;
-  border-width: $border;
+  border-width: $value;
 }
 
 h1 {
   font: 100% $font-stack;
   color: $primary-color;
-  border-width: $border;
+  border-width: $value;
 }
+
+.happy {
+  border: {
+    style: solid;
+    width: $value + 10;
+  }
+
+  &-sad {
+    border:{
+      style: dot;
+      radius: $value;
+    }
+  }
+}
+
+
 
 
 
