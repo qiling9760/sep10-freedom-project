@@ -8,26 +8,18 @@ ul {
   padding-left: 0;
 }
 
-p {
-  font: 100% Helvetica, sans-serif;
-  color: red;
+div {
   border-width: 2px;
+  border-style: solid;
+  border-color: red;
+}
+
+p {
+  font-size: 10px;
 }
 
 h1 {
-  font: 100% Helvetica, sans-serif;
-  color: red;
-  border-width: 2px;
-}
-
-.happy {
-  border-style: solid;
-  border-width: 12px;
-}
-
-.happy-sad {
-  border-style: dot;
-  border-radius: 2px;
+  font-size: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -5,35 +5,24 @@ $font-stack: Helvetica, sans-serif;
 $primary-color: red;
 $value:2px;
 
+%border {
+  border: {
+    width: $value;
+    style: solid;
+    color: $primary-color;
+  }
+}
 
+div {
+  @extend %border;
+}
 
 p {
-  font: 100% $font-stack;
-  color: $primary-color;
-  border-width: $value;
+  $value: 10px !global;
+  font-size: $value;
 }
 
 h1 {
-  font: 100% $font-stack;
-  color: $primary-color;
-  border-width: $value;
+  font-size: $value;
 }
-
-.happy {
-  border: {
-    style: solid;
-    width: $value + 10;
-  }
-
-  &-sad {
-    border:{
-      style: dot;
-      radius: $value;
-    }
-  }
-}
-
-
-
-
 
