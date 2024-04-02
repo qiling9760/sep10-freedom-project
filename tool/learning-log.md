@@ -161,9 +161,135 @@ p {
   }
   ```
   If the local variable and the global variable has the same name, the value for the global variable will be changed if you use the `!global` for the local variable.   
-  
+
+4/1/24 
+- I learned more about **`@use`**. 
+  - Stylesheets that load up by `@use` are call "modules". 
+  - I can use mixins from other modules by using `@include`. 
+    -  **`@include <namespace>.<mixin>()`** `@include name-of-the-scss-file.name-of-the-mixin`
+    ``` SCSS
+    style2.scss
+
+    @mixin font{
+      font:{
+        family: sans-serif;
+        size: 100px;
+      }
+    }
+    ```
+    ``` SCSS
+    style.scss
+    @use 'style2';
+
+    h1 {
+      @include style2.font;
+      color: blue;
+    }
+    ```
+    ``` CSS
+    h1 {
+    font-family: sans-serif;
+    font-size: 100px;
+    color: blue;
+    }
+    ```
+
+  - I can give a shortcut to the name of the scss file if its name is too long. 
+    ``` SCSS
+    @use 'style2' as two;
+
+    h1 {
+      @include two.font;
+    }
+    ```
+    - I tried to use `2` for the shortcut of `style2.scss` but it does not work. I tried to use symbols like `%` and it also does not work. I figured out that I can only use letters for shortcut names. 
 
 
+  - **Private member**. I can make some of the members of my stylesheet to not be available outside of that stylesheet. I can do that by **add a "-" or "_" to the begining of its name**. 
+    ``` SCSS
+    style2.css
+    @mixin font{
+      font:{
+        family: sans-serif;
+        size: 100px;
+      }
+    } 
+
+    @mixin -border {
+      border: {
+        radius:2px;
+        width: 10px;
+      }
+    }
+    ``` 
+    ``` SCSS
+    style.scss
+    @use 'style2' as two;
+
+    h1 {
+      @include two.font;
+      color: blue;
+      @include two.border;
+    }
+    ```
+    - My terminal will pop up error if I try to use `@mixin border` in my `style.scss`. 
+    ```
+    Error: Undefined mixin.
+
+    6 │   @include two.border;
+      │   ^^^^^^^^^^^^^^^^^^^
+      ╵
+    ```
+  - I can define variables with the `!default flag` to make them configurable. This means if I do not define the value for the variable, it will keep the default value. But if I define it with a new value, the new value will override the default value. 
+    ``` SCSS
+    style2.scss
+    $family: sans-serif !default;
+    $size: 100px !default;
+
+    @mixin font{
+      font:{
+      family: $family;
+      size: $size;
+      }
+    }
+    ```
+    ``` SCSS
+    style.scss
+    @use 'style2' as two with (
+      $size: 20px
+    );
+
+    h1 {
+      @include two.font;
+      color: blue;
+    }
+    ```
+    ``` CSS
+    h1 {
+    font-family: sans-serif;
+    font-size: 20px;
+    color: blue;
+    }
+    ```
+    - At first, I make the variables `$family: sans-serif !default;` and `$size: 100px !default;` in the local scope. But when I try to compile my SCSS to CSS, my terminal says error. 
+      ``` SCSS
+      style2.scss
+      @mixin font{
+        $family: sans-serif !default;
+        $size: 100px !default;
+        font:{
+        family: $family;
+        size: $size;
+        }
+      }
+      ```
+      ```
+      Error: This variable was not declared with !default in the @used module.
+
+      2 │   $size: 20px
+        │   ^^^^^^^^^^^
+      ```
+    - I did not know why that happened but when I go back to the SASS documentation, I noticed that the put the variable in the global scope, so I moved my variables out of the block. I learned only global variables written at the top level of the stylesheet can be configured. 
 
 
 
