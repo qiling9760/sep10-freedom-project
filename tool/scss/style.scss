@@ -1,28 +1,8 @@
-@use 'style2';
-@use 'style3';
-
-$font-stack: Helvetica, sans-serif;
-$primary-color: red;
-$value:2px;
-
-%border {
-  border: {
-    width: $value;
-    style: solid;
-    color: $primary-color;
-  }
-}
-
-div {
-  @extend %border;
-}
-
-p {
-  $value: 10px !global;
-  font-size: $value;
-}
+@use 'style2' as two with (
+  $size: 20px
+);
 
 h1 {
-  font-size: $value;
+  @include two.font;
+  color: blue;
 }
-
