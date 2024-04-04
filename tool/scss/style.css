@@ -1,7 +1,9 @@
-h1 {
+p {
   font-family: sans-serif;
-  font-size: 20px;
-  color: blue;
+}
+
+h1 {
+  font-family: monospace;
 }
 
 /*# sourceMappingURL=style.css.map */

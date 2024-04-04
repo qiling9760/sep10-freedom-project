@@ -1,18 +1,4 @@
-$family: sans-serif !default;
-$size: 100px !default;
-
 @mixin font{
-  font:{
-  family: $family;
-  size: $size;
-  }
+  font-family: sans-serif;
 }
-
-@mixin -border {
-  border: {
-    radius:2px;
-    width: 10px;
-  }
-}
-
 

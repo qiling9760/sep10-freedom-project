@@ -1,8 +1,11 @@
-@use 'style2' as two with (
-  $size: 20px
-);
+@use "sass-library" as sass;
 
-h1 {
-  @include two.font;
-  color: blue;
+p {
+  @include sass.two-font;
 }
+
+h1{
+  @include sass.three-font;
+}
+
+
