@@ -240,7 +240,7 @@ p {
       │   ^^^^^^^^^^^^^^^^^^^
       ╵
     ```
-  - I can define variables with the `!default flag` to make them configurable. This means if I do not define the value for the variable, it will keep the default value. But if I define it with a new value, the new value will override the default value. 
+  - I can define variables with the **`!default flag`** to make them configurable. This means if I do not define the value for the variable, it will keep the default value. But if I define it with a new value, the new value will override the default value. 
     ``` SCSS
     style2.scss
     $family: sans-serif !default;
