@@ -291,6 +291,81 @@ p {
       ```
     - I did not know why that happened but when I go back to the SASS documentation, I noticed that the put the variable in the global scope, so I moved my variables out of the block. I learned only global variables written at the top level of the stylesheet can be configured. 
 
+4/8/24
+- **`@foward`** loads a Sass stylesheet and makes its mixins, functions, and variable available when your stylesheet is loaded with the `@use` rule. 
+  - **Add prefix** to the stylesheets when they are load with `@forward` allows me to organize mixins that are from different stylesheets but have the same name. 
+    ``` SCSS
+    style2.scss
+    @mixin font{
+    font-family: sans-serif;
+    }
+    ```
+    ``` SCSS
+    style3.scss
+    @mixin font {
+      font-family: monospace;
+    }
+    ```
+    ``` SCSS
+    style-library.scss
+    @forward "style2" as two-*;
+    @forward "style3" as three-*;
+    ```
+    ``` SCSS
+    style.scss
+    @use "sass-library" as sass;
+
+    p {
+      @include sass.two-font;
+    }
+
+    h1{
+      @include sass.three-font;
+    }
+    ```
+    ``` CSS
+    p {
+    font-family: sans-serif;
+    }
+
+    h1 {
+      font-family: monospace;
+    }
+    ```
+      - Both mixins from `style2.scss` and `style3.scss` are named `font`. Adding prefixes to the modules allows the computer to know which `font` mixin that I am refering to. 
+
+  - Control whether a member of a module is visible by writing `writing @forward "<url>" hide <members...> or @forward "<url>" show <members...>`
+    ``` SCSS
+    style2.scss
+    $size: 20px;
+    ```
+    ``` SCSS
+    style3.scss
+    $size: 10px;
+    ```
+    ``` SCSS
+    sass-library.scss
+    @forward "style2";
+    @forward "style3" hide $size;
+    ```
+    ``` SCSS
+    style.scss
+    @use "sass-library" as sass;
+
+    p {
+      font-size: sass.$size;
+    }
+    ```
+    ``` CSS
+    p {
+    font-size: 20px;
+    }
+    ```
+      - Although both variable are named `size`, the computer knows that I am refering to `$size:20px;` because I have hidden `$size:10px;`. 
+      - If I did not hide one of the variable, it will pop up error. 
+        ```
+        Error: Two forwarded modules both define a variable named $size.
+        ```
 
 
 <!--
