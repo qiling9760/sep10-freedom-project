@@ -334,40 +334,103 @@ p {
     ```
       - Both mixins from `style2.scss` and `style3.scss` are named `font`. Adding prefixes to the modules allows the computer to know which `font` mixin that I am refering to. 
 
-  - Control whether a member of a module is visible by writing `writing @forward "<url>" hide <members...> or @forward "<url>" show <members...>`
-    ``` SCSS
-    style2.scss
-    $size: 20px;
-    ```
-    ``` SCSS
-    style3.scss
-    $size: 10px;
-    ```
-    ``` SCSS
-    sass-library.scss
-    @forward "style2";
-    @forward "style3" hide $size;
-    ```
-    ``` SCSS
-    style.scss
-    @use "sass-library" as sass;
+  - **Control whether a member of a module is visible** by writing `@forward "<url>" hide <members...> or @forward "<url>" show <members...>`
+      ``` SCSS
+      style2.scss
+      $size: 20px;
+      ```
+      ``` SCSS
+      style3.scss
+      $size: 10px;
+      ```
+      ``` SCSS
+      sass-library.scss
+      @forward "style2";
+      @forward "style3" hide $size;
+      ```
+      ``` SCSS
+      style.scss
+      @use "sass-library" as sass;
 
-    p {
-      font-size: sass.$size;
-    }
-    ```
-    ``` CSS
-    p {
-    font-size: 20px;
-    }
-    ```
+      p {
+        font-size: sass.$size;
+      }
+      ```
+      ``` CSS
+      p {
+      font-size: 20px;
+      }
+      ```
       - Although both variable are named `size`, the computer knows that I am refering to `$size:20px;` because I have hidden `$size:10px;`. 
       - If I did not hide one of the variable, it will pop up error. 
         ```
         Error: Two forwarded modules both define a variable named $size.
         ```
+  - `@mixin` and `@include` define styles that can be re-used throughout your stylesheet
+    - Mixins can make arguements where their behaviors were not specified at first but can be customized by `@include` each time they are used.
+      ``` SCSS
+      @mixin font($size, $color) {
+        font-size:$size;
+        font-color:$color;
+      }
 
+      p {
+        @include font(10px, red)
+      }
+      ``` 
+      ``` CSS
+      p {
+      font-size: 10px;
+      font-color: red;
+      }
+      ```
+      - It will pop up error if you did not declare the values in `@include`
+      ```
+      Error: Missing argument $size.
+      1   │ @mixin font($size, $color) {
+          │        ━━━━━━━━━━━━━━━━━━━ declaration
+      ... │
+      7   │   @include font
+          │   ^^^^^^^^^^^^^ invocation
+      ```
+    - Mixins can have an arguement where default values were set. If the values are not declared in `@include`, it will use the default values. 
+      ``` SCSS
+      @mixin font($size:20px, $color:blue) {
+      font-size:$size;
+      font-color:$color;
+      }
 
+      p {
+        @include font($color:red);
+      }
+      ```
+      ``` CSS
+      p {
+      font-size: 20px;
+      font-color: red;
+      } 
+      ```
+      - If I want to keep the first default value and change the second one, I need to specify the name of the variable that I want to change. If not, the program will view the value that I put is for the first variable. 
+      - At first, I wrote the following code but it pops up error. 
+      ``` SCSS
+      @mixin font($size:20px, $color:blue) {
+      font-size:$size;
+      font-color:$color;
+      }
+
+      p {
+        @include font(red);
+      }
+      ```  
+      ```
+      Error: Missing argument $color.
+          ╷
+      1   │ @mixin font($size:20px, $color) {
+          │        ━━━━━━━━━━━━━━━━━━━━━━━━ declaration
+      ... │
+      7   │   @include font(red);
+          │   ^^^^^^^^^^^^^^^^^^ invocation
+      ```
 <!--
 * Links you used today (websites, videos, etc)
 * Things you tried, progress you made, etc
