@@ -1,11 +1,8 @@
-@use "sass-library" as sass;
+@mixin font($size:20px, $color:blue) {
+  font-size:$size;
+  font-color:$color;
+}
 
 p {
-  @include sass.two-font;
+  @include font($color:red);
 }
-
-h1{
-  @include sass.three-font;
-}
-
-
