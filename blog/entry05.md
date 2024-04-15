@@ -1,8 +1,15 @@
 # Entry 5
 ##### 4/8/24
 
-## Tool that I chose - SASS
-I learned about the `@use` function, how to combine variables with operations, the "parent selector", the "placeholder selector" and the `@extend` function, variables, "private members", the `!default flag`, the `@forward` function, and the `@mixin` and `@include` functions. 
+## SASS
+I had learned a lot about SASS from reading the SASS documentations. Things that I leanred this past few weeks that I thought are the most important are 
+- the `@use` function
+- the "placeholder selector" and the `@extend` function
+- variables
+- "private members"
+- the `!default flag`
+- the `@forward` function
+- the `@mixin` and `@include` functions. 
 
 ## Compile SCSS to CSS
 At first, I did not know how to compile SCSS to CSS. I went on slack to see if someone can help me. One of my classmates Kyle who also chose SASS as his tool had the same problem as me. He asked his question, and Austin was able to help him out. Austin told us that we could install SASS using `npm install -g sass`. Then, we can use the **`sass scss/style.scss css/style.css`** command to compile our SCSS codes to CSS codes. I was able to use this command to compile codes when I am tinkering with SASS. 
@@ -59,8 +66,39 @@ h1 {
 ```
  - I tried to use `2` for the shortcut of `style2.scss` but it does not work. I tried to use symbols like `%` and it also does not work. I figured out that I can only use letters for shortcut names. 
 
-## Combine variables with operations
+## The "placeholder selector" and the @extend function
+The placeholder selector start with a `%` symbol, and **it will not be included in the CSS output**. The `@extend` function **allows one selector to inherit styles from another selector**.
 
+I tinker with it by made a placeholder selector called `%border` and use `@extend` to let my `div` selector to inherit its properties.
+
+``` SCSS
+$primary-color: red;
+$value:2px;
+
+%border {
+border: {
+    width: $value;
+    style: solid;
+    color: $primary-color;
+}
+}
+
+div {
+@extend %border; 
+}
+```
+The output CSS are 
+
+``` CSS
+div {
+border-width: 2px;
+border-style: solid;
+border-color: red;
+}
+```
+Here it can see that when the SCSS is compile to CSS, only the `div` is being compiled. The placeholder selector allow me to give multiple selectors the same properties. 
+
+## 
 
 
 
