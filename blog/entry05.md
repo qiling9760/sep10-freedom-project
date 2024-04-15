@@ -213,7 +213,50 @@ color: blue;
 ## `@forward` function
 **`@foward`** loads a Sass stylesheet and makes its mixins, functions, and variable available when your stylesheet is loaded with the `@use` rule. 
 
-**Add prefix** to the stylesheets when they are load with @forward allows me to organize mixins that are from different stylesheets but have the same name.
+**Add prefix** to the stylesheets when they are load with `@forward` can organize mixins that are from different stylesheets but have the same name.
+
+``` SCSS
+style2.scss
+@mixin font{
+font-family: sans-serif;
+}
+```
+``` SCSS
+style3.scss
+@mixin font {
+    font-family: monospace;
+}
+```
+``` SCSS
+style-library.scss
+@forward "style2" as two-*;
+@forward "style3" as three-*;
+```
+``` SCSS
+style.scss
+@use "sass-library" as sass;
+
+p {
+    @include sass.two-font;
+}
+
+h1{
+    @include sass.three-font;
+}
+```
+``` CSS
+p {
+    font-family: sans-serif;
+}
+
+h1 {
+    font-family: monospace;
+}
+```
+**Control whether a member of a module is visible** by writing `@forward "<url>" hide <members...> or @forward "<url>" show <members...>`. 
+
+
+
 
 
 [Previous](entry04.md) | [Next](entry06.md)
