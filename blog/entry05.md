@@ -2,7 +2,7 @@
 ##### 4/8/24
 
 ## SASS
-I had learned a lot about SASS from reading the SASS documentations. Things that I leanred this past few weeks that I thought are the most important are 
+I had learned a lot about SASS from reading the [SASS documentations](https://sass-lang.com/documentation/). Things that I leanred this past few weeks that I thought are the most important are 
 - the `@use` function
 - the "placeholder selector" and the `@extend` function
 - variables
@@ -98,7 +98,55 @@ border-color: red;
 ```
 Here it can see that when the SCSS is compile to CSS, only the `div` is being compiled. The placeholder selector allow me to give multiple selectors the same properties. 
 
-## 
+## Variables
+The **variable** is the **name of the value**, and everytime you refer to that variable that means you want to use that value for your property. Variables start with a `$` symbol. It is written as `<variable>: <expression>`. It can be located anywhere of the page. There is global variable and local variable. 
+  - If a variable changes value, the earlier property will have the old value and the later will have the new value. 
+  - Global variable is declare at the top of the stylesheet. It can be accessed anywhere. 
+  - Local variable is declare in blocks. It can be only accessed within the block it was declared. Selectors cannot use local variables that were declared in other selectors. 
+  - Global and local variables can have the same name, but local variable will override global variable. 
+  
+  ``` SCSS
+  p {
+    $value: 10px;
+    font-size: $value;
+  }
+
+  h1 {
+    font-size: $value; 
+  }
+  ```
+
+  ``` CSS
+  p {
+  font-size: 10px;
+  }
+
+  h1 {
+    font-size: 2px;
+  }
+  ```
+  - You can make a local variable became global variable by using `!global` statement. 
+  ``` SCSS 
+  p {
+    $value: 10px !global;
+    font-size: $value;
+  }
+
+  h1 {
+    font-size: $value;
+  }
+  ``` 
+  ``` CSS
+  p {
+    font-size: 10px;
+  }
+
+  h1 {
+    font-size: 10px;
+  }
+  ```
+  If the local variable and the global variable has the same name, the value for the global variable will be changed if you use the `!global` for the local variable.
+
 
 
 
