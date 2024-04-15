@@ -255,7 +255,42 @@ h1 {
 ```
 **Control whether a member of a module is visible** by writing `@forward "<url>" hide <members...> or @forward "<url>" show <members...>`. 
 
+## The @mixin and @include functions.
+**`@mixin` and `@include`** define styles that can be re-used throughout the stylesheet.  
+**Mixins can make arguements where their behaviors were not specified at first but can be customized** by `@include` each time they are used. It will pop up error if you did not declare the values in `@include`. 
+``` SCSS
+@mixin font($size, $color) {
+    font-size:$size;
+    font-color:$color;
+}
 
+p {
+    @include font(10px, red)
+}
+``` 
+``` CSS
+p {
+font-size: 10px;
+font-color: red;
+}
+```
+**Mixins can have an arguement where default values** were set. If the values are not declared in `@include`, it will use the default values. The name of the variable need to be specify if there are multiple variables.
+``` SCSS
+@mixin font($size:20px, $color:blue) {
+font-size:$size;
+font-color:$color;
+}
+
+p {
+    @include font($color:red);
+}
+```
+``` CSS
+p {
+font-size: 20px;
+font-color: red;
+} 
+```
 
 
 
