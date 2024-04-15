@@ -56,7 +56,7 @@ font-size: 100px;
 color: blue;
 }
 ```
-I can give a shortcut to the name of the scss file if its name is too long. 
+I can give a shortcut to the name of the scss file if its name is too long. The shortcut can only be letters. Numbers or symbols will be undefined. 
 ``` SCSS
 @use 'style2' as two;
 
@@ -64,12 +64,9 @@ h1 {
     @include two.font;
 }
 ```
- - I tried to use `2` for the shortcut of `style2.scss` but it does not work. I tried to use symbols like `%` and it also does not work. I figured out that I can only use letters for shortcut names. 
 
 ## The "placeholder selector" and the @extend function
 The placeholder selector start with a `%` symbol, and **it will not be included in the CSS output**. The `@extend` function **allows one selector to inherit styles from another selector**.
-
-I tinker with it by made a placeholder selector called `%border` and use `@extend` to let my `div` selector to inherit its properties.
 
 ``` SCSS
 $primary-color: red;
@@ -87,8 +84,6 @@ div {
 @extend %border; 
 }
 ```
-The output CSS are 
-
 ``` CSS
 div {
 border-width: 2px;
@@ -96,7 +91,6 @@ border-style: solid;
 border-color: red;
 }
 ```
-Here it can see that when the SCSS is compile to CSS, only the `div` is being compiled. The placeholder selector allow me to give multiple selectors the same properties. 
 
 ## Variables
 The **variable** is the **name of the value**, and everytime you refer to that variable that means you want to use that value for your property. Variables start with a `$` symbol. It is written as `<variable>: <expression>`. It can be located anywhere of the page. There is global variable and local variable. 
@@ -148,7 +142,7 @@ The **variable** is the **name of the value**, and everytime you refer to that v
   If the local variable and the global variable has the same name, the value for the global variable will be changed if you use the `!global` for the local variable.
 
 ## Private member
-I can make some of the members of my stylesheet to not be available outside of that stylesheet. I can do that by **add a "-" or "_" to the begining of its name**. These members are **private members**. It will pop up error in my terminal if I load up a stylesheet and try to use the private members in that stylesheet. 
+I can make some of **the members of my stylesheet to not be available outside of that stylesheet**. I can do that by **add a "-" or "_" to the begining of its name**. These members are **private members**. It will pop up error in my terminal if I load up a stylesheet and try to use the private members in that stylesheet. 
 
 ``` SCSS
 style2.css
@@ -183,10 +177,43 @@ Error: Undefined mixin.
     │   ^^^^^^^^^^^^^^^^^^^
     ╵
 ```
-Mixin `font` was successfully compiled but mixin `-border` was not. 
 
+## The `!default flag`
+**Variables with the `!default flag` are configurable**. If the value of a variable is not defined, the vriable will keep its default value. If the variable is defined with a new value, the new will override the default value. Only global variables written at the top level of the stylesheet can be configured. 
+``` SCSS
+style2.scss
+$family: sans-serif !default;
+$size: 100px !default;
 
+@mixin font{
+    font:{
+    family: $family;
+    size: $size;
+    }
+}
+```
+``` SCSS
+style.scss
+@use 'style2' as two with (
+    $size: 20px
+);
 
+h1 {
+    @include two.font;
+    color: blue;
+}
+```
+``` CSS
+h1 {
+font-family: sans-serif;
+font-size: 20px;
+color: blue;
+}
+```
+## `@forward` function
+**`@foward`** loads a Sass stylesheet and makes its mixins, functions, and variable available when your stylesheet is loaded with the `@use` rule. 
+
+**Add prefix** to the stylesheets when they are load with @forward allows me to organize mixins that are from different stylesheets but have the same name.
 
 
 [Previous](entry04.md) | [Next](entry06.md)
