@@ -7,7 +7,7 @@ I had learned a lot about SASS from reading the [SASS documentations](https://sa
 - the "placeholder selector" and the `@extend` function
 - variables
 - private members
-- the `!default flag`
+- the `!default` flag
 - the `@forward` function
 - the `@mixin` and `@include` functions. 
 
@@ -178,7 +178,7 @@ Error: Undefined mixin.
     ╵
 ```
 
-## The `!default flag`
+## The `!default` flag
 **Variables with the `!default flag` are configurable**. If the value of a variable is not defined, the vriable will keep its default value. If the variable is defined with a new value, the new will override the default value. Only global variables written at the top level of the stylesheet can be configured. 
 ``` SCSS
 style2.scss
@@ -256,7 +256,8 @@ h1 {
 **Control whether a member of a module is visible** by writing `@forward "<url>" hide <members...> or @forward "<url>" show <members...>`. 
 
 ## The @mixin and @include functions.
-**`@mixin` and `@include`** define styles that can be re-used throughout the stylesheet.  
+**`@mixin` and `@include`** define styles that can be re-used throughout the stylesheet. 
+
 **Mixins can make arguements where their behaviors were not specified at first but can be customized** by `@include` each time they are used. It will pop up error if you did not declare the values in `@include`. 
 ``` SCSS
 @mixin font($size, $color) {
@@ -274,7 +275,7 @@ font-size: 10px;
 font-color: red;
 }
 ```
-**Mixins can have an arguement where default values** were set. If the values are not declared in `@include`, it will use the default values. The name of the variable need to be specify if there are multiple variables.
+**Mixins can have an arguement where default values** were set. If the values are not declared in `@include`, it will use the default values. The name of the variable that you want to change value for need to be specify if there are multiple variables.
 ``` SCSS
 @mixin font($size:20px, $color:blue) {
 font-size:$size;
@@ -291,8 +292,43 @@ font-size: 20px;
 font-color: red;
 } 
 ```
+## Skills 
+### How to read 
+The main skill that I learned is "how to read" because I need to read through the SASS documentations to learn about the asspect of SASS and how to use them. I first read about what they do and look at the examples. If there is something wrong when I am tinkering, I would go back to the documentation to read it again to see if I miss something. 
 
+For example, when I am working with the `!default` flag, I first make the variables `$family: sans-serif !default;` and `$size: 100px !default;` in the local scope. 
+```
+Error: This variable was not declared with !default in the @used module.
 
+2 │   $size: 20px
+  │  
+```
+When I go back to the SASS documentation, I noticed that they put the variable in the global scope, so I moved my variables out of the block.
+
+### How to google
+The second skill that I learned is how to google. Sometimes when I am confused with something, I couldn't find the solution in the SASS documentation, so I need to google it. 
+
+For example, I faced a problem when I want to change values for my mixins. I want to change the value for the second variable but keep the default value for my first variable, but my terminal kept poping up error. 
+``` SCSS
+@mixin font($size:20px, $color:blue) {
+font-size:$size;
+font-color:$color;
+}
+
+p {
+    @include font(red);
+}
+```  
+```
+Error: Missing argument $color.
+    ╷
+1   │ @mixin font($size:20px, $color) {
+    │        ━━━━━━━━━━━━━━━━━━━━━━━━ declaration
+... │
+7   │   @include font(red);
+    │   ^^^^^^^^^^^^^^^^^^ invocation
+```
+I searched online to see how to fix this problem and I found the solution on this [website](https://medium.com/@seth.poulin/simplifying-sass-mixins-with-default-values-163da334a51e). The author was able to show multiple ways that I can change the value for the second variable but keep the first one. 
 
 [Previous](entry04.md) | [Next](entry06.md)
 
