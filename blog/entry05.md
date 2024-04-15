@@ -6,7 +6,7 @@ I had learned a lot about SASS from reading the [SASS documentations](https://sa
 - the `@use` function
 - the "placeholder selector" and the `@extend` function
 - variables
-- "private members"
+- private members
 - the `!default flag`
 - the `@forward` function
 - the `@mixin` and `@include` functions. 
@@ -146,6 +146,44 @@ The **variable** is the **name of the value**, and everytime you refer to that v
   }
   ```
   If the local variable and the global variable has the same name, the value for the global variable will be changed if you use the `!global` for the local variable.
+
+## Private member
+I can make some of the members of my stylesheet to not be available outside of that stylesheet. I can do that by **add a "-" or "_" to the begining of its name**. These members are **private members**. It will pop up error in my terminal if I load up a stylesheet and try to use the private members in that stylesheet. 
+
+``` SCSS
+style2.css
+@mixin font{
+    font:{
+    family: sans-serif;
+    size: 100px;
+    }
+} 
+
+@mixin -border {
+    border: {
+    radius:2px;
+    width: 10px;
+    }
+}
+``` 
+``` SCSS
+style.scss
+@use 'style2' as two;
+
+h1 {
+    @include two.font;
+    color: blue;
+    @include two.border;
+}
+```
+```
+Error: Undefined mixin.
+
+6   │   @include two.border;
+    │   ^^^^^^^^^^^^^^^^^^^
+    ╵
+```
+Mixin `font` was successfully compiled but mixin `-border` was not. 
 
 
 
