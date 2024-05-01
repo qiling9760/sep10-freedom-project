@@ -1,5 +1,5 @@
 # SEP10 Freedom Project
-by **X**
+by **Qilin**
 
 ## Context
 I am a student at [HSTAT](https://www.hstat.org/) in the [Software Engineering Program](https://hstatsep.github.io/). The "Freedom Project" for SEP10 is a year-long project all about making a website that informs the viewer of the current and future innovations in the topic of my choosing.
@@ -10,9 +10,9 @@ I used HTML, CSS, Bootstrap, and Github. I also chose to independently study **X
 
 ## Links
 
-[Product]()
+[Product](toysproject/toy-index.html)
 
-[Presentation]()
+[Presentation](https://qiling9760.github.io/sep10-freedom-project/toysproject/toy-index.html)
 
 ## Implications
 ##### PROS
