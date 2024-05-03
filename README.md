@@ -6,7 +6,7 @@ I am a student at [HSTAT](https://www.hstat.org/) in the [Software Engineering P
 
 For my project, I chose the topic of **Toys and Puzzles**. 
 
-I used HTML, CSS, Bootstrap, and Github. I also chose to independently study **X** in order to help me make by website.
+I used HTML, CSS, Bootstrap, and Github. I also chose to independently study **SASS** in order to help me make by website.
 
 ## Links
 
