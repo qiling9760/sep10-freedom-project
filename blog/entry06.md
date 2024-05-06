@@ -34,7 +34,23 @@ The first thing that I put on my plan was to organzie our content. We turned our
 ![content](image.png)
 
 ### Coding 
-We decide to use a Boostrap template for our project. I found a free template on [Start Boostrap](https://startbootstrap.com/) and downloaded to my computer and unzip it in my IDE. The [template](https://startbootstrap.com/theme/agency) was originally made for a porfolio, so it has sections that we don't need for our project. I deleted the images they provided and the sections that we are not going to use. Now, we have to find new images and replace the place holder text with our content. We also need to use our tool in our project. The tool that Ellen had was Aframe and mine was SASS. 
+We decide to use a Boostrap template for our project. I found a free template on [Start Boostrap](https://startbootstrap.com/) and downloaded to my computer and unzip it in my IDE. The [template](https://startbootstrap.com/theme/agency) was originally made for a porfolio, so it has sections that we don't need for our project. I deleted the images they provided and the sections that we are not going to use.
+
+For example, the original navbar has five sections, such as Services, Portfolio, About, Team, and Contact. I deleted the Team and Contact part and changed the name for the rest of the sections. 
+
+``` HTML
+<div class="collapse navbar-collapse" id="navbarResponsive">
+    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+        <li class="nav-item"><a class="nav-link" href="#context">Context</a></li>
+        <li class="nav-item"><a class="nav-link" href="#present">Present</a></li>
+        <li class="nav-item"><a class="nav-link" href="#future">Future</a></li>
+    </ul>
+</div>
+```
+
+Later, we have to find new images and replace the place holder text with our content. We also need to use our tool in our project. The tool that Ellen had was Aframe and mine was SASS. 
+
+
 
 When we start working, we split up the work. I went to find images for the present technologies and upload them to GitHub, and Ellen drew the images for future technologies and link these images to the website. When she was working on her Aframe, I was putting our content into the website. We worked together and finished our minimum valueble product of our project before deadline. 
 
@@ -49,6 +65,7 @@ The challenge that I have on my tool was when I am compiling my SASS code to the
 ### Takeaway
 One takeaway that I have was decide whether we are going to use a template or not before we make our wireframes. Our project did not look like our wireframes because I have not decide to use a template or not when making our wireframe, so it came out that they did not match. Next time, I will consider that before I make the wireframes. 
 
+### Engineering Design Process
 
 
 
