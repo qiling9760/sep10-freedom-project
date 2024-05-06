@@ -66,7 +66,9 @@ The challenge that I have on my tool was when I am compiling my SASS code to the
 One takeaway that I have was decide whether we are going to use a template or not before we make our wireframes. Our project did not look like our wireframes because I have not decide to use a template or not when making our wireframe, so it came out that they did not match. Next time, I will consider that before I make the wireframes. 
 
 ### Engineering Design Process
+Now, I am currently on step 5 **Create a prototype** and step 6 **Test and evaluate the prototype**. I have made a simple website that has all the information needed but it is not perfect. For the next stage, which is step 7 **Improve as needed**, I  need to add things and test things out to make it look more perfect. 
 
+### Skills 
 
 
 [Previous](entry05.md) | [Next](entry07.md)
