@@ -70,6 +70,12 @@ Now, I am currently on step 5 **Create a prototype** and step 6 **Test and evalu
 
 ### Skills 
 
+#### Collaboration
+One skill that I learned was **Collaboration**. In this project, I split up the work with my partner, so each of us work on different parts of the poject. We also helped each other out when one of us have problems. For example, at first it was Ellen finding the images, but she did not know how to upload them onto Github, so I took her part and taught her how to upload images later on when we need to find new images. 
+
+#### Communication
+The second skill that I learned was **Communication**. During the break, we used Discord to communicate and call when we were doing the project. When she was making the modal for future technology, I told her what how the bracelet should look like. 
+
 
 [Previous](entry05.md) | [Next](entry07.md)
 
