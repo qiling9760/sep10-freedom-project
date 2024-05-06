@@ -38,6 +38,16 @@ We decide to use a Boostrap template for our project. I found a free template on
 
 When we start working, we split up the work. I went to find images for the present technologies and upload them to GitHub, and Ellen drew the images for future technologies and link these images to the website. When she was working on her Aframe, I was putting our content into the website. We worked together and finished our minimum valueble product of our project before deadline. 
 
+### Challenge 1  
+The challenge that we faced when making our website was the images. The size of the images that I found on the internet were all different. I have tried to use CSS to change the size of these images, but they looked very ugly when I did that. Some of the images would get squezzed while others were perfect. So, Ellen and I went to find new images to place the old ones, and this time we select images that have similar sizes. 
+
+### Challenge 2
+The second challenge that we faced was our tools. For Ellen, she have to use Aframe to make a modal of our future technologies. One of the technology that we have was "A toy that can make music based on the user’s feeling." For this toy, Ellen need to make modals for a bracelet and a speaker. She was struggling on making the bracelet, so we asked our other friends that also learned Aframe. One of our friend Xue helped us by giving us a idea of what code she can use. 
+
+The challenge that I have on my tool was when I am compiling my SASS code to the CSS file that the template has, the code that I wrote override the code that the template has. This triggered me because I only wanted to change some part of the code and not all of them. When I went back to school and told my teacher about that, he said I can first copy all the CSS code to my SASS file then write my own code. 
+
+### Takeaway
+One takeaway that
 
 
 [Previous](entry05.md) | [Next](entry07.md)
