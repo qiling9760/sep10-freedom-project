@@ -47,7 +47,9 @@ The second challenge that we faced was our tools. For Ellen, she have to use Afr
 The challenge that I have on my tool was when I am compiling my SASS code to the CSS file that the template has, the code that I wrote override the code that the template has. This triggered me because I only wanted to change some part of the code and not all of them. When I went back to school and told my teacher about that, he said I can first copy all the CSS code to my SASS file then write my own code. 
 
 ### Takeaway
-One takeaway that
+One takeaway that I have was decide whether we are going to use a template or not before we make our wireframes. Our project did not look like our wireframes because I have not decide to use a template or not when making our wireframe, so it came out that they did not match. Next time, I will consider that before I make the wireframes. 
+
+
 
 
 [Previous](entry05.md) | [Next](entry07.md)
