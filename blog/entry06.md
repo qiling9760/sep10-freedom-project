@@ -14,7 +14,10 @@ Before I can do anything else, I need to plan it first. I need to make two wiref
 The second thing we did after we finished our wireframes was to plan out the days that we will work on our project. We assigned specific parts that we need to do on specifc days, so we can work through out the break. 
 
 #### Organize the content 
-The first step I made before get into coding 
+The first thing that I put on my plan was to organzie our content. We turned our research into paragraphs, so they look more organized. At first, they were just bullet points, but I made them into sentences and add more details. 
+
+
+
 
 [Previous](entry05.md) | [Next](entry07.md)
 
