@@ -31,5 +31,6 @@
 - 4/30 Tuesday - Check for requirements/relax 
 
 #### Beyond MVP
-
-* Background/border/components
+- Change the sizes of the images (make it look good on both computer and phone)
+- SASS --> "fonts and font size"
+- Aframe (use , change background and make it more complex)
