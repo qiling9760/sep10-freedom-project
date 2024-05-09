@@ -1,15 +1,17 @@
 $size: 100%;
 
-@media (max-width: 576px) {
-  @mixin font($size, $color) {
-    font-size:;
-    font-color:$color;
-  }
+@mixin font($style) {
+  font-style:$style;
 }
+
 
 .img-future {
     max-width: $size;
     height: $size !important;
+}
+
+section-heading {
+  @include font("Lora:ital")
 }
 
 @charset "UTF-8";
