@@ -1,7 +1,8 @@
 $size: 100%;
 
-@mixin font($style) {
-  font-style:$style;
+@mixin font($style, $color) {
+  font-family:$style !important;
+  color: $color !important;
 }
 
 
@@ -10,9 +11,18 @@ $size: 100%;
     height: $size !important;
 }
 
-section-heading {
-  @include font("Lora:ital")
+.section-heading {
+  @include font (Lora, red)
 }
+
+// p {
+//   @include font ()
+// }
+
+// .present-caption-heading {
+//   @include
+// }
+
 
 @charset "UTF-8";
 /*!

@@ -4,8 +4,9 @@
   height: 100% !important;
 }
 
-section-heading {
-  font-style: "Lora:ital";
+.section-heading {
+  font-family: Lora !important;
+  color: red !important;
 }
 
 /*!
