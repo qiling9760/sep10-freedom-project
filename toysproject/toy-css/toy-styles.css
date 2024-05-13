@@ -1,14 +1,40 @@
 @charset "UTF-8";
+@media (max-width: 576px) {
+  #logo {
+    width: 100% !important;
+    height: 15vh !important;
+  }
+}
 .img-future {
-  max-width: 100%;
+  max-width: 100% !important;
   height: 100% !important;
 }
 
 .section-heading {
   font-family: Lora !important;
-  color: red !important;
+  color: #71d8e3 !important;
 }
 
+.present-caption-heading, .text-uppercase {
+  font-family: Inconsolata !important;
+  color: #258bd9 !important;
+}
+
+.present-caption-subheading {
+  font-family: Ojuju !important;
+  color: #71aee3 !important;
+}
+
+h7, p, li, .context-heading {
+  font-family: RobotoCondensed !important;
+  color: #71aee3 !important;
+}
+
+@media (min-width: 992px) {
+  h7, p, li {
+    font-size: larger !important;
+  }
+}
 /*!
 * Start Bootstrap - Agency v7.0.12 (https://startbootstrap.com/theme/agency)
 * Copyright 2013-2023 Start Bootstrap

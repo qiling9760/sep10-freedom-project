@@ -1,5 +1,12 @@
 $size: 100%;
 
+@media (max-width: 576px) {
+  #logo {
+    width: $size !important ;
+    height: 15vh  !important;
+  }
+}
+
 @mixin font($style, $color) {
   font-family:$style !important;
   color: $color !important;
@@ -7,21 +14,32 @@ $size: 100%;
 
 
 .img-future {
-    max-width: $size;
+    max-width: $size !important;
     height: $size !important;
 }
 
 .section-heading {
-  @include font (Lora, red)
+  @include font (Lora, #71d8e3)
 }
 
-// p {
-//   @include font ()
-// }
+.present-caption-heading, .text-uppercase {
+  @include font (Inconsolata, #258bd9)
+}
 
-// .present-caption-heading {
-//   @include
-// }
+.present-caption-subheading{
+  @include font (Ojuju, #71aee3)
+}
+
+h7, p, li, .context-heading {
+  @include font (Roboto+Condensed, #71aee3)
+}
+
+@media (min-width: 992px) {
+  h7, p, li {
+    font-size: larger !important;
+  }
+}
+
 
 
 @charset "UTF-8";
