@@ -3,7 +3,7 @@ $size: 100%;
 @media (max-width: 576px) {
   #logo {
     width: $size !important ;
-    height: 5vh  !important;
+    height: $size !important;
   }
 }
 
