@@ -1,10 +1,13 @@
 @charset "UTF-8";
-@media (max-width: 576px) {
-  #logo {
-    width: 50% !important;
-    height: 50% !important;
-  }
+#logo {
+  width: 100% !important;
+  height: 100% !important;
 }
+
+#logolink {
+  height: 10% !important;
+}
+
 .img-future {
   max-width: 100% !important;
   height: 100% !important;
