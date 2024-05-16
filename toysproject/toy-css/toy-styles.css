@@ -5,7 +5,7 @@
 }
 
 #logolink {
-  height: 10% !important;
+  width: 10% !important;
 }
 
 .img-future {
@@ -142,7 +142,6 @@ body {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-
 
 #context {
   background-color: #FDFFC2;
