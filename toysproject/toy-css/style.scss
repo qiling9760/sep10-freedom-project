@@ -19,19 +19,19 @@ $size: 100%;
 }
 
 .section-heading {
-  @include font (Lora, #71d8e3)
+  @include font (Lora, #D1BB9E)
 }
 
 .present-caption-heading, .text-uppercase {
-  @include font (Inconsolata, #258bd9)
+  @include font (Inconsolata, #A79277)
 }
 
 .present-caption-subheading{
-  @include font (Ojuju, #71aee3)
+  @include font (Ojuju, #A79277)
 }
 
 h7, p, li, .context-heading {
-  @include font (Roboto+Condensed, #71aee3)
+  @include font (Roboto+Condensed, #67729D)
 }
 
 @media (min-width: 992px) {
