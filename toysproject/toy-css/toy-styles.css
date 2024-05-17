@@ -15,22 +15,22 @@
 
 .section-heading {
   font-family: Lora !important;
-  color: #71d8e3 !important;
+  color: #D1BB9E !important;
 }
 
 .present-caption-heading, .text-uppercase {
   font-family: Inconsolata !important;
-  color: #258bd9 !important;
+  color: #A79277 !important;
 }
 
 .present-caption-subheading {
   font-family: Ojuju !important;
-  color: #71aee3 !important;
+  color: #A79277 !important;
 }
 
 h7, p, li, .context-heading {
   font-family: RobotoCondensed !important;
-  color: #71aee3 !important;
+  color: #67729D !important;
 }
 
 @media (min-width: 992px) {
