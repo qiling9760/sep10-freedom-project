@@ -1,10 +1,13 @@
 $size: 100%;
 
-@media (max-width: 576px) {
-  #logo {
-    width: 50% !important ;
-    height: 50% !important;
+#logo {
+    width: $size !important ;
+    height: $size !important;
   }
+
+
+#logolink {
+  width: 15% !important;
 }
 
 @mixin font($style, $color) {
