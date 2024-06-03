@@ -10,8 +10,16 @@ There are some takeaways I got from presenting in front of my class:
 
 - Know what you are going to say - It is important to know what you are going to say before you present because you don't want to stop and think while presenting. Know what you want to say before hand also make you more confident. 
 
-## Takeaways from 
+## Takeaways from giving Expo elevator pitch 
+I have made an [elevator pitch](https://docs.google.com/document/d/106vSeo3k-M99-Bf328oMbOkHTRylpga8nKW-EO1nUDo/edit#heading=h.68gwumrierlm) for the Freedom Project Expo. In the elevator pitch, I talked about my topic, different sections of my website, and our tools. I presented the elevator pitch with my partner Ellen. 
 
+There are some takeaways I got from giving my elevator pitch: 
+
+- Have different elevator pitches for different people - I needed to present to different people, to judges and to students who don't have SEP, so the things in my elevator pitch also need to be different. For the judges, they had SEP before so I can simply on how I make my website using HTML and CSS. But for the students who don't have SEP, I need to explain to the what coding language and tools I used like Bootstrap. 
+
+- Make the elevator pitch simple - I need to make my pitch simple because the judges only have one minute to listen to me. I need to show the most important things about my project to them. 
+
+- Do not over explain - For students who don't have SEP, I should not get into too deep about my tools and the coding process because they had no idea how they work. I should show them more about how the website work. 
 
 [Previous](entry06.md) | [Next](entry08.md)
 
