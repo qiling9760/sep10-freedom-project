@@ -26,7 +26,7 @@ I am currently on **Communicate the result** where I had presented my website to
 
 ## Skills
 ### Embracing failure 
-One skill I learned is **embracing failure** because I learned from my mistakes. I did not make enough eye contact when presenting in front of the class, so I am going to do better next and make more eye contact. 
+One skill I learned is **embracing failure** because I learned from my mistakes. I did not make enough eye contact when presenting in front of the class, so I am going to do better next time and make more eye contact. 
 
 ### Organization 
 Another skill I learned is **organization**. I learned to organize everything I did in the past few months for my Freedom Project. I only put the important things in my presentation and not let the unimportant things take up my time in the presentation and the elevator pitch. 
