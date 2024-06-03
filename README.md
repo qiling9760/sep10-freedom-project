@@ -19,7 +19,7 @@ My blogs show the process of me making a webite about **Toys and Puzzles** for m
 
 ## Implications
 ##### PROS
-* Individuals - Informed the readers about how toys and puzzles have been affected by technologies by showing them softwares and hardwares that already existed and realted to toys and puzzles. 
+* Individuals - Informed the readers about how toys and puzzles have been affected by technologies by showing them softwares and hardwares that already existed and related to toys and puzzles. 
 - Jobs - Gave ideas to toys designers about what kind of toys in the future they can make.   
 - Finance - Companies may invest to create the new toys that I presented in my website. 
 - Relationship - One of my future ideas involve sharing your life as a game, so this allows people to learn more about each other. 
