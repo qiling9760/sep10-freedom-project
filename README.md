@@ -9,7 +9,7 @@ For my project, I chose the topic of **Toys and Puzzles**.
 I used HTML, CSS, Bootstrap, and Github. I also chose to independently study **SASS** in order to help me make by website.
 
 ## Content 
-My blogs show the process of me making a webite about **Toys and Puzzles** for my Freedom Project. My blogs show what tools and skills I have learned over the year to make my freedom project. 
+My blogs show the process of me making a webite about **Toys and Puzzles** for my Freedom Project. My blogs show what skills I have learned over the year to make my freedom project. It also included information that I put in my website and how I came up with them. 
 
 ## Links
 
