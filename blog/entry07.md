@@ -21,6 +21,11 @@ There are some takeaways I got from giving my elevator pitch:
 
 - Do not over explain - For students who don't have SEP, I should not get into too deep about my tools and the coding process because they had no idea how they work. I should show them more about how the website work. 
 
+## EDP
+I am currently on **Communicate the result** where I had presented my website to other people. I talked about what I found about **Toys and Puzzles** and what product I made out of it. I explained my process of making my website about toys and puzzles. 
+
+
+
 [Previous](entry06.md) | [Next](entry08.md)
 
 [Home](../README.md)
