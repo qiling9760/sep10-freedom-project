@@ -24,7 +24,12 @@ There are some takeaways I got from giving my elevator pitch:
 ## EDP
 I am currently on **Communicate the result** where I had presented my website to other people. I talked about what I found about **Toys and Puzzles** and what product I made out of it. I explained my process of making my website about toys and puzzles. 
 
+## Skills
+### Embracing failure 
+One skill I learned is **embracing failure** because I learned from my mistakes. I did not make enough eye contact when presenting in front of the class, so I am going to do better next and make more eye contact. 
 
+### Organization 
+Another skill I learned is **organization**. I learned to organize everything I did in the past few months for my Freedom Project. I only put the important things in my presentation and not let the unimportant things take up my time in the presentation and the elevator pitch. 
 
 [Previous](entry06.md) | [Next](entry08.md)
 
