@@ -1,7 +1,7 @@
 # Entry 7
 ##### 6/3/24
 ## Takeaways from giving in-calss presentaion 
-I have made a slide show presentation for my in-class presentation of my Freedom Project. In the slides, I included what I had done before making my website, what I did when coding the website, and the tools that we learned on our own. I need to present my slides to my class with my partner Ellen.
+I have made a [slide show presentation](https://docs.google.com/presentation/d/1glgH9jph1g-d7wHwDeJotIWYjZ-MWQukFolTyd9lTBw/edit) for my in-class presentation of my Freedom Project. In the slides, I included what I had done before making my website, what I did when coding the website, and the tools that we learned on our own. I need to present my slides to my class with my partner Ellen.
 
 There are some takeaways I got from presenting in front of my class:
 
@@ -12,7 +12,7 @@ There are some takeaways I got from presenting in front of my class:
 - Know what you are going to say - It is important to know what you are going to say before you present because you don't want to stop and think while presenting. Knowing what you want to say beforehand also makes you more confident.
 
 ## Takeaways from giving Expo elevator pitch
-I have made an elevator pitch for the Freedom Project Expo. In the elevator pitch, I talked about my topic, different sections of my website, and our tools. I presented the elevator pitch with my partner Ellen.
+I have made [an elevator pitch](https://docs.google.com/document/d/106vSeo3k-M99-Bf328oMbOkHTRylpga8nKW-EO1nUDo/edit) for the Freedom Project Expo. In the elevator pitch, I talked about my topic, different sections of my website, and our tools. I presented the elevator pitch with my partner Ellen.
 
 There are some takeaways I got from giving my elevator pitch:
 
